@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            background-color: #139bab;
+            color: white;
+            padding: 10px 20px;
+            top: 0;
+            justify-content: space-around;
+        }
+        .logo{
+            font-size: 30px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+       nav ul{
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+       nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+        }
+      nav  ul li a:hover{
+            background: white;
+            color: #139bab;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        .btn button{
+            background-color: #f1f1f1;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .btn button:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 2px 2px blue;
+        }
+
+        /* section 1 CSS */
+        .sec1{
+            display: flex;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .sec1Text{
+            margin-top: 100px;
+            margin-left: 20px;
+            flex: 1;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .sec1Text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .sec1Text p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .sec1 img {
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+        }
+        .sec1 .btn button {
+            border: 1px solid black;
+        }
+
+        /* Section 2 CSS */
+        .sec2 {
+            margin-top: 80px;
+        }
+
+        .sec2 h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+
+        .card1 {
+            width: 250px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        .card1:hover {
+            box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+
+        }
+        
+
+        .card1 img {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+        }
+        .sec3Card1 img {
+            width: 100px;
+        }
+
+        .sec3 {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 1200px;
+            background-color: lightblue;
+            white-space: nowrap;
+            overflow-x: scroll;
+            margin-left: 200px;
+            padding: 20px;
+            border-radius: 30px;
+            margin-bottom: 100px;
+            text-align: center;
+
+
+        }
+
+        .sec3FirstHalf {
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 30px;
+            justify-content: space-around;
+            padding: 20px;
+
+        }
+
+
+
+        /* section 4 */
+
+        .mianSec4{
+            background-color:#139bab;
+            border-radius: 20px;
+            margin: 30px;
+            padding: 30px;
+            /* gap: 100px; */
+            color: white;
+            /* justify-content: space-around; */
+        }
+        .sec4{
+            display: flex;
+            background-color:#139bab;
+            border-radius: 20px;
+            margin: 30px;
+            /* padding: 30px; */
+            /* gap: 100px; */
+            justify-content: space-around;
+
+        }
+        .sec4Text{
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            text-align:center;
+        }
+        .sec4list li{
+            margin-top: 20px;
+            font-size: 20px ;
+        }
+
+
+        /* section 5 */
+        .sec5{
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        .sec5text{
+            margin-top: 20px;
+            display:flex;
+            gap: 200px;
+            text-align:center;
+            padding: 20px;
+            margin: 20px;
+            margin-left: 120px;
+        }
+
+
+        /* section 6 */
+        .sec6 {
+            margin-top: 80px;
+        }
+
+        .sec6 h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .card6 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+
+        .card6a{
+          
+            width: 250px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 20px;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        .card6:hover {
+            box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+
+        }
+
+        /* section 7 */
+        .sec7{
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        .sec7img{
+            margin-top: 20px;
+            display:flex;
+            gap: 100px;
+            text-align:center;
+            padding: 20px;
+            margin: 20px;
+            margin-left: 400px;
+        }
+
+
+        /* section 8 */
+
+        .sec8{
+            padding: 20px;
+            margin: 20px;
+
+        }
+        .class8aa{
+            display: flex;
+            gap: 50px;
+        }
+        .sec8aimg{
+            display: flex;
+        }
+
+
+        /* section 9 */
+        .sec9{
+            float: right;
+            margin-right: 400px;
+        }
+        .sec9 button{
+            padding: 20px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            border-radius:10px;
+        }
+        .sec9 button:hover{
+            background-color: #139bab;
+            border: 5px solid black;
+        }
+
+        .sec10{
+            margin-top: 280px;
+            background-color: #139bab;
+            display: flex;
+            padding: 20px;
+            /* margin:20px; */
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGONAME</div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+        </ul>  
+        <div class="btn">
+            <button>Register</button>
+            <button>Login</button>
+        </div>  
+    </nav>
+
+    <!-- section 1 -->
+     <div class="sec1">
+        <div class="sec1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque atque quia sequi, explicabo vel
+                repellendus nostrum laboriosam quas, cumque aspernatur ab obcaecati est nulla eveniet possimus quidem
+                at? Sapiente, placeat.</p>
+                <div class="btn">
+                    <button>Download App</button>
+                    <button>Watch Now</button>
+                </div>
+        </div>
+        <img src="../img/sparsh.jpg.jpeg" alt="">
+     </div>
+
+
+     <!-- section 2 -->
+    <div class="sec2">
+        <h1>Why Choose CareerWill</h1>
+        <div class="cards">
+            <div class="card1">
+                <img src="https://careerwill.com/images/mocktest.svg" alt="">
+                <h2>Mock Test</h2>
+                <p>Designed by careerwill’s highly qualified faculty to help you ace your exams</p>
+            </div>
+            <div class="card1">
+                <img src="https://careerwill.com/images/mocktest.svg" alt="">
+                <h2>Mock Test</h2>
+                <p>Designed by careerwill’s highly qualified faculty to help you ace your exams</p>
+            </div>
+            <div class="card1">
+                <img src="https://careerwill.com/images/mocktest.svg" alt="">
+                <h2>Mock Test</h2>
+                <p>Designed by careerwill’s highly qualified faculty to help you ace your exams</p>
+            </div>
+            <div class="card1">
+                <img src="https://careerwill.com/images/mocktest.svg" alt="">
+                <h2>Mock Test</h2>
+                <p>Designed by careerwill’s highly qualified faculty to help you ace your exams</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="sec3">
+        <div class="sec3FirstHalf">
+            <div class="sec3Card0">
+                <img src="https://careerwill.com/images/exam2.png" alt="" height="50px" width="50px">
+                <p>RRB GROUP D</p>
+            </div>
+            <div class="sec3Card2">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC</p>
+            </div>
+            <div class="sec3card3">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC CGL</p>
+            </div>
+            <div class="sec3card4">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC MTS</p>
+            </div>
+            <div class="sec3card5">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>UPSSSC PET</p>
+            </div>
+            <div class="sec3card6">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC GD CONSTABLE</p>
+            </div>
+            <div class="sec3card7">
+                <img src="https://careerwill.com/images/exam6.png" alt="" height="50px" width="50px">
+                <p>UPSE CIVIL SERVICES</p>
+            </div>    
+            <div class="sec3card8">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>UPTET</p>
+            </div>    
+            <div class="sec3card9">
+                <img src="https://careerwill.com/images/exam7.png" alt="" height="50px" width="50px">
+                <p>CTET</p>
+            </div>    
+            <div class="sec3card10">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>SUPERTET</p>
+            </div>
+            <div class="sec3card11">
+                <img src="https://careerwill.com/images/exam8.png" alt="" height="50px" width="50px">
+                <p>NDA</p>
+            </div>    
+             <div class="sec3card12">
+                <img src="https://careerwill.com/images/exam9.png" alt="" height="50px" width="50px">
+                <p>NAVY</p>
+            </div>
+        </div>   
+        
+        <div class="sec3FirstHalf">
+            <div class="sec3Card0">
+                <img src="https://careerwill.com/images/exam2.png" alt="" height="50px" width="50px">
+                <p>RRB GROUP D</p>
+            </div>
+            <div class="sec3Card2">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC</p>
+            </div>
+            <div class="sec3card3">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC CGL</p>
+            </div>
+            <div class="sec3card4">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC MTS</p>
+            </div>
+            <div class="sec3card5">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>UPSSSC PET</p>
+            </div>
+            <div class="sec3card6">
+                <img src="https://careerwill.com/images/exam1.png" alt="" height="50px" width="50px">
+                <p>SSC GD CONSTABLE</p>
+            </div>
+            <div class="sec3card7">
+                <img src="https://careerwill.com/images/exam6.png" alt="" height="50px" width="50px">
+                <p>UPSE CIVIL SERVICES</p>
+            </div>    
+            <div class="sec3card8">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>UPTET</p>
+            </div>    
+            <div class="sec3card9">
+                <img src="https://careerwill.com/images/exam7.png" alt="" height="50px" width="50px">
+                <p>CTET</p>
+            </div>    
+            <div class="sec3card10">
+                <img src="https://careerwill.com/images/exam3.png" alt="" height="50px" width="50px">
+                <p>SUPERTET</p>
+            </div>
+            <div class="sec3card11">
+                <img src="https://careerwill.com/images/exam8.png" alt="" height="50px" width="50px">
+                <p>NDA</p>
+            </div>    
+             <div class="sec3card12">
+                <img src="https://careerwill.com/images/exam9.png" alt="" height="50px" width="50px">
+                <p>NAVY</p>
+            </div>
+        </div>   
+    </div>
+    <div class="mianSec4">
+        <h1 style="text-align: center;  font-size: 50px;">Careerwill App Features</h1>
+    <div class="sec4">
+        <div class="imagg" style="display: flex;">
+            <img src="https://careerwill.com/images/app-feature1.png" alt="" height="400px" width="200px">
+            <img src="https://careerwill.com/images/app-feature2.png" alt="" height="400px" width="200px">
+            <img src="https://careerwill.com/images/app-feature3.png" alt="" height="400px" width="200px">
+        </div>
+            <div class="sec4class1">
+            <h4 style="color: white; font-size: 20px; margin-top: 10px;">The wait is over. </h4>
+            <h2 style="color: white; font-size: 35px; margin-top: 10px;">We bring to you</h2>
+
+            <ul class="sec4list">
+                <li>LIVE interactive sessions</li>
+                <li>Best educators of India</li>
+                <li>Handwritten PDFs</li>
+                <li>Personalized groups for better learning</li>
+                <li>Recorded and Downloadable Classes</li>
+                <li>Solve Doubts Instantly</li>
+            </ul>
+        </div>
+    </div>
+   </div>
+  
+    <div class="sec5">
+        <h1>Our Achievements</h1>
+        <div class="sec5text">
+            <div class="box1">
+                <img src="https://careerwill.com/images/subscribers-icon.svg" alt="" height="50px" width="50px">
+                <h1>100M+ <h3>Downloads</h3></h1>
+            </div>
+            <div class="box2">
+                <img src="https://careerwill.com/images/selections.svg" alt="" height="50px" width="50px">
+                <h1>1.2M+ <h3>Paid Students</h3></h1>      
+            </div>
+        <div class="box3">
+            <img src="" alt="" height="50px" width="50px">
+            <h1>4.7 <h3>Star Ratings</h3></h1>
+        </div>
+        <div class="box4">
+            <img src="https://careerwill.com/images/deily-live-class.svg" alt="" height="50px" width="50px">
+            <h1>120+ <h3>Daily Live classes</h3></h1>   
+        </div>
+    </div>
+    </div>
+
+    <div class="sec6">
+        <h1>Hear it directly from our students</h1>
+        <div class="card6">
+            <div class="card6a">
+               <div style="display: flex;">
+                <img src="https://careerwill.com/images/testimonials/rahul.png" alt="" height="100px" width="100px">
+               <div style="margin-top:20px ;">
+                <h2>Rahul Gola</h2>
+                <h4>Assistant Section Officer</h4>
+               </div>
+               </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus porro veritatis neque, maxime facilis ut? Voluptatem autem tenetur reiciendis impedit?</p>
+        </div>
+        <div class="card6a">
+            <div style="display: flex;">
+                <img src="https://careerwill.com/images/testimonials/mokshada.png" alt="" height="100px" width="100px">
+                <div style="margin-top: 20px;">
+                    
+                    <h2>Manish Kumar</h2>
+                    <h4>Assistant Section Officer</h4>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate consequatur dolorem quis assumenda, odit modi distinctio aspernatur placeat facere molestias sunt enim obcaecati beatae minus voluptates quia dolores provident commodi?</p>
+        </div>
+        <div class="card6a">
+            <div style="display: flex;">
+                <img src="https://careerwill.com/images/testimonials/manoj.png" alt="" height="100px" width="100px">
+                <div style="margin-top: 20px;">
+                    <h2>Manoj Kumar</h2>
+                    <h4>Income Tax Officer</h4>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam reiciendis tempora temporibus dolore quibusdam eveniet magnam dolores eius dolorem tenetur, doloribus asperiores. Sequi praesentium beatae iste repellendus, deleniti nam eligendi accusantium nihil quidem excepturi architecto!</p>
+        </div>
+
+    </div>
+    </div> 
+    <div class="sec7">
+        <h1>Featured In</h1>
+        <div class="sec7img">
+            <div class="sec7imga"> 
+                <img src="https://careerwill.com/images/client1.svg" alt="" height="100px" width="100px">
+            </div>
+            <div class="sec7imgb">
+                <img src="https://careerwill.com/images/client2.png" alt="" height="100px" width="100px">
+            </div>
+            <div class="sec7imgc">
+                <img src="https://careerwill.com/images/client3.png" alt="" height="100px" width="100px">
+            </div>
+            <div class="sec7text" style="margin-top: 35px;">
+                <h4>+ many more</h4>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="sec8">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus tempore saepe deserunt sed beatae voluptate, aperiam nobis aspernatur repellendus.</p>
+    <div class="class8aa">
+        <div class="sec8a">
+            <h1 style="color: #139bab; text-align: center; margin-bottom: 20px; margin-top: 20px;">Student emand for test prepration and <span style="color: red;">school supplement coursed</span></h1>
+            <div class="sec8aimg">
+                <img src="https://img.freepik.com/free-photo/pile-3d-facebook-logos_1379-875.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid_sidr" alt="" height="100px" width="100px">
+                <div>  
+                    <h3 style="color: red;">Quality>Quantity</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, culpa? Voluptas voluptates aut sunt rerum.</p>
+                </div>
+            </div>
+            <div class="sec8aimg">
+                <img src="https://img.freepik.com/free-photo/pile-3d-instagram-logos_1379-876.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid_sidr" alt="" height="100px" width="100px">
+                <div>
+                    <h3 style="color: red;">Time</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, culpa? Voluptas voluptates aut sunt rerum.</p>
+                </div>
+            </div>
+    <div class="sec8aimg">
+                <img src="https://img.freepik.com/free-photo/3d-youtube-logo-silver-stand-with-dark-logos-background_134542-607.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid_sidr" alt="" height="100px" width="100px">
+                <div>
+                    <h3 style="color: red;">Affordability</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, culpa? Voluptas voluptates aut sunt rerum.</p>
+                </div>
+            </div>
+    <div class="sec8aimg">
+                <img src="https://img.freepik.com/free-photo/lion-head-with-purple-blue-face-gold-crown_1340-33060.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid_sidr" alt="" height="100px" width="100px">
+                <div>
+                    <h3 style="color: red;">DOubt Resolution</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, culpa? Voluptas voluptates aut sunt rerum.</p>
+                </div>
+            </div>
+    <div class="sec8aimg">
+                <img src="https://img.freepik.com/free-photo/web-design-concepts-with-blurred-background_1134-82.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid_sidr" alt="" height="100px" width="100px">
+                <div>
+                    <h3 style="color: red;">Rewards</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, culpa? Voluptas voluptates aut sunt rerum.</p>
+                </div>
+            </div>    
+        </div>
+        <div class="sec8b">
+        <img src="../img/image.png" alt="" height="600px" width="600px">
+        </div>
+    </div>
+    </div>
+
+    <div class="sec9">
+        <h1 style="margin-top: 30px; font-size: 30px;">Download India's Best Learning App</h1>
+        <h5 style="margin-top: 30px; font-size: 20px;">Most Loved for test prep and online class</h5>
+        <h3 style="background-color: #139bab; color: white; margin-top: 30px; border-width: 10px;">Loved By 5Million+ Student</h3>
+        <button>Download on Play Store</button>
+        <button>Download On App Store</button>
+    </div>
+
+    <div class="sec10">
+        <div class="sec10a">
+            <h1>Quick Links</h1>
+            <h2>About</h2>
+            <h2>Career</h2>
+            <h2>FAQ'S</h2>
+        </div>
+        <div class=" sec10b">
+            <h4>Refund and Cancellation Policy</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Terms & Conditions</h4>
+        </div>
+        <div class="sec10c">
+            <h1>Quick Contact</h1>
+            <h3>Phone No.</h3>
+            <h3>Whatsapp</h3>
+            <h3>Email</h3>
+        </div>
+        <div class="sec10d">
+            <h1>Office Address</h1>
+            <h4>24, Rajpur Road , Clock Tower , Oposite MDDA Complex , New Tower Building , Clock Tower , Dehradun - 248007 </h4>
+        </div>
+        <div class="sec10e">
+            <h1>App Download</h1>
+            <h1>Social Link</h1>
+        </div>
+    </div>
+</body>
+
+</html>

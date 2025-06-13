@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+        }
+        .logo{
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        ul{
+            display: flex;
+            margin-top:  20px;
+            list-style-type: none;
+            gap: 20px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            
+        }
+        ul li a:hover{
+            background-color: beige;
+            color:black;
+            border-radius: 30px;
+            padding: 5px 10px;
+            border: 2px solid black;
+        }
+        .btn button{
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: grey;
+            color: red;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        .btn button:hover{
+            background-color: red;
+            color: white;
+        }
+        .text{
+            margin-top:-100px;
+            color: white;
+            margin-left: 80px;
+        }
+        .text button{
+            background-color: red;
+            color: white;
+            padding: 5px 40px;
+            border-radius: 10px;
+        }
+        .text button:hover{
+            background-color: white;
+            color: red;
+            border: 2px solid red;
+        }
+
+        /* section 1 */
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card1{
+            padding: 10px 30px;
+            width: 200px;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .card1:hover{
+            box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .card1 button{
+            background-color: rgb(15, 10, 2);
+            color: white;
+            padding: 10px 20px;
+            margin: 20px;
+        }
+        .card1 button:hover{
+            background: grey;
+            color: black;
+            border: 2px solid black;
+        }
+
+        /* section 2 */
+        .sec2img{
+            margin-top: 40px;
+            text-align: center;   
+        }
+
+        /* section 3 */
+
+
+
+
+
+        /* section 4 */
+        .sec4img1{
+            display: flex;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .sec4img2{
+            display: flex;
+            margin-top: 40px;
+            text-align: center;
+
+        }
+
+
+        /* section 5 */
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card1{
+            padding: 10px 30px;
+            width: 250px;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .card1:hover{
+            box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .card1 button{
+            background-color: rgb(15, 10, 2);
+            color: white;
+            padding: 10px 20px;
+            margin: 20px;
+        }
+        .card1 button:hover{
+            background: grey;
+            color: black;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="https://img.freepik.com/free-vector/gradient-bicycle-logo-template_23-2150409766.jpg?size=626&ext=jpg" alt="" height="70px" width="70px" style="border-radius: 50%;">
+        </div>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="bicycle"><a href="#">Bicycle</a></li>
+            <li class="accessories"><a href="#">Accessories</a></li>
+            <li class="about"><a href="#">About</a></li>
+            <li class="Contact"><a href="#">Contact</a></li>
+            <li class="dropdown"><a href="#">Dropdown</a></li>
+        </ul>
+
+            <div>
+                <input type="text" placeholder="Search" style="border: 4px solid black; height: 10px; width: 100px; padding: 10px; margin-top: 10px;">
+            </div>
+
+            <div class="btn">
+                <button>Search</button>
+            </div>
+
+
+
+    </nav>
+    <div>
+        <img src="https://ganeshdutt100.github.io/Bicylce-Store/cycle.jpg" alt="" height="400px" width="100%">
+        <div class="text">
+            <div class="bttn">
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 1 -->
+     <div class="sec1">
+        <div class="sec1heading">
+            <h1 style="margin-top: 100px; text-align: center; font-size: 40px;">New Arrivales</h1>
+            <div class="sec1card">
+                <div class="card">
+                    <div class="card1">
+                        <img src="https://img.freepik.com/free-photo/man-riding-mountain-bike-low-angle_23-2148777253.jpg?size=626&ext=jpg" alt="" height="100px" width="100px">
+                        <h2>Kryo X26 MTB – Model K</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                        <button>    learn more</button>
+                    </div>
+                    <div class="card1">
+                        <img src="https://img.freepik.com/premium-psd/realistic-mountain-bike-bmx-bicycle-3d-mockup-front-view_326414-343.jpg?size=626&ext=jpg" alt="" height="100px" width="100px">
+                        <h2>Kryo X26 MTB – Model K</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                        <button>    learn more</button>
+                </div>
+                <div class="card1">
+                    <img src="https://img.freepik.com/free-photo/young-attractive-slim-woman-riding-bicycle-sport-morning-sunrise-summer-beach-sports-fitness-wear-active-healthy-lifestyle-smiling-happy-having-fun_285396-5574.jpg?size=626&ext=jpg" alt="" height="100px" width="100px">
+                    <h2>Kryo X26 MTB – Model K</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    <button>    learn more</button>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- section 2 -->
+      <div class="sec2">
+        <div class="sec2text">
+            <div class="txt">
+                <h1 style="text-align: center; font-size: 40px;">Cycle Your Way to Fitness</h1>
+            </div>
+            <div class="sec2img">
+
+                <img src="https://websitedemos.net/cycle-shop-02/wp-content/uploads/sites/789/2021/03/bicycle-7.jpg" alt="" height="200px" width="300px" style="margin-right: 200px;border-radius: 20px; "> 
+                <img src="https://websitedemos.net/cycle-shop-02/wp-content/uploads/sites/789/2021/03/bicycle-5.jpg" alt="" height="200px" width="300px" style="margin-right: 200px; border-radius: 20px;">    
+                <img src="https://websitedemos.net/cycle-shop-02/wp-content/uploads/sites/789/2021/03/bicycle-1.jpg" alt="" height="200px" width="300px" style="border-radius: 20px;">    
+            </div>
+        </div>
+      </div>
+
+      <!-- section 3 -->
+       <div class="section3">
+        <div class="sec3text1">
+            <div class="sec3text">
+                <h1  style="text-align: center; font-size: 40px; margin-top: 50px;">New Arrivales
+                </h1>
+                <div class="txt1">
+                    <h3>Discover The Collection
+                    </h3>
+                    <h1>Mountain Bikes
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+                    </p>
+                </div>
+                <div class="sec3textt">
+                    <ul>
+                        <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Officia deserunt mollit 
+                            <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                        Officia deserunt mollit
+                    </li>
+
+                    <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Sunt in culpa qu 
+                        <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                        Sunt in culpa qu 
+                    </li>
+                    
+                    <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Excepteur sint occaecat
+                        <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                        Excepteur sint occaecat
+                    </li>
+                    
+                </ul>
+                <div class="btn">
+                    <button>Explore Now</button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="txt1" style="margin-top: 100px;">
+            <h3>Discover The Collection
+            </h3>
+            <h1>City Bikes
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+            </p>
+        </div>
+        <div class="sec3textt">
+            <ul>
+                <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Officia deserunt mollit 
+                    <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                Officia deserunt mollit
+            </li>
+
+            <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Sunt in culpa qu 
+                <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                Sunt in culpa qu 
+            </li>
+            
+            <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Excepteur sint occaecat
+                <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+                Excepteur sint occaecat
+            </li>
+            
+        </ul>
+        <div class="btn">
+            <button>Explore Now</button>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="txt1" style="margin-top: 100px;">
+    <h3>Discover The Collection
+    </h3>
+    <h1>Speciality Bike
+
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+    </p>
+</div>
+<div class="sec3textt">
+    <ul>
+        <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Officia deserunt mollit 
+            <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+        Officia deserunt mollit
+    </li>
+
+    <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Sunt in culpa qu 
+        <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+        Sunt in culpa qu 
+    </li>
+    
+    <li><img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px"> Excepteur sint occaecat
+        <img src="https://img.freepik.com/free-vector/3d-metal-star-isolated_1308-115283.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="20px" width="20px">
+        Excepteur sint occaecat
+    </li>
+    
+</ul>
+<div class="btn">
+    <button>Explore Now</button>
+    
+</div>
+</div>
+</div>    
+    </div>
+    </div>
+
+
+    <!-- section 4 -->
+    <div class="sec4">
+        <div class="sec4text">
+            <div class="txxt">
+                <h1 style="text-align: center; font-size: 40px;">Why Choose KRYO ?</h1>
+            </div>
+            <div class="sec4img1">
+                
+                <img src="https://img.freepik.com/free-vector/vintage-bike-design_1268-347.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 100px; border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;"> 
+                <img src="https://img.freepik.com/free-vector/transport-traffic-vehicles-design_24877-49992.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 100px;  border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;">    
+                <img src="https://img.freepik.com/free-photo/asphalt-bicycle-background-bike-active_1303-2597.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 100px;  border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;">    
+            </div>
+            <div class="sec4img2">
+
+                <img src="https://img.freepik.com/free-photo/girl-goes-bicycle_1398-264.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 50px;  border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;">    
+                <img src="https://img.freepik.com/free-vector/family-tandem-bike_1308-25103.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 50px;  border-radius: 20px; border: 2px solid black;box-shadow: 2px 5px 2px 2px blueviolet;">    
+                <img src="https://img.freepik.com/free-photo/silhouette-women-with-bicycle-beautiful-sky_1150-5338.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style=" margin-left: 50px; border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;">    
+                <img src="https://img.freepik.com/free-vector/summer-background-with-beautiful-bicycle_23-2147491338.jpg?ga=GA1.1.1163872320.1736227206&semt=ais_hybrid" alt="" height="200px" width="300px" style="  margin-left: 50px; border-radius: 20px; border: 2px solid black; box-shadow: 2px 5px 2px 2px blueviolet;">     
+            </div>
+
+        </div>
+      </div>
+
+      <!-- section 5 -->
+      <div class="sec5">
+        <div class="sec5heading">
+            <h1 style="margin-top: 100px; text-align: center; font-size: 40px;">New Arrivales</h1>
+            <div class="sec5card">
+                <div class="card">
+                    <div class="card1">
+                        <img src="https://img.freepik.com/free-photo/electrical-scooter-with-helmet-city_23-2148952711.jpg?size=626&ext=jpg" alt="" height="300px" width="250px">
+                        <h3>Accessories</h3>
+                        <h1>Bicycle Helmet Black</h1>
+                        <img src="https://image.shutterstock.com/image-vector/five-stars-customer-product-review-260nw-2544130693.jpg" alt="" height="50px" width="120px">
+                        <h5>$ 27.0 - $35.0</h5>
+                </div>
+                <div class="card1">
+                    <img src="https://img.freepik.com/free-photo/close-up-bicycle-outdoors_23-2148889089.jpg?size=626&ext=jpg" alt="" height="300px" width="250px">
+                    <h3>Accessories</h3>
+                    <h1>Bicycle Hendal</h1>
+                    <img src="https://image.shutterstock.com/image-vector/five-stars-customer-product-review-260nw-2544130693.jpg" alt="" height="50px" width="120px">
+                    <h5>$ 27.0 - $35.0</h5>
+            </div>
+            <div class="card1">
+                <img src="https://img.freepik.com/free-photo/close-up-bicycle-gears_1232-2192.jpg?size=626&ext=jpg" alt="" height="300px" width="250px">
+                <h3>Accessories</h3>
+                <h1>Bicycle Gloves Pink</h1>
+                <img src="https://image.shutterstock.com/image-vector/five-stars-customer-product-review-260nw-2544130693.jpg" alt="" height="50px" width="120px">
+                <h5>$ 27.0 - $35.0</h5>
+        </div>
+            <div class="card1">
+                <img src="https://img.freepik.com/free-photo/bicycle-outdoors-street_23-2148889151.jpg?size=626&ext=jpg%20alt=" alt="" height="300px" width="250px">
+                <h3>Accessories</h3>
+                <h1>Bicycle Black</h1>
+                <img src="https://image.shutterstock.com/image-vector/five-stars-customer-product-review-260nw-2544130693.jpg" alt="" height="50px" width="120px">
+                <h5>$ 27.0 - $35.0</h5>
+        </div>
+            </div>
+        </div>
+     </div>
+
+
+</body>
+</html>
